@@ -54,6 +54,8 @@ public:
 	virtual bool 			inVoxel(const CBoundingBox& box) const
 	{
 		// --- PUT YOUR CODE HERE ---
+		CBoundingBox var = calcBounds();
+		return var.overlaps(box);
 		return true;
 	}
 	
